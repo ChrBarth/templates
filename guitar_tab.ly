@@ -42,7 +42,7 @@ snippet = \relative c' {
 			>>
 			}
 		\new TabStaff {
-			% here we set the tuning (for custom tuning (below \header this has to be changed)
+			% here we set the tuning (for custom tuning there is an example below the \header section)
 			\set TabStaff.stringTunings = #guitar-tuning
 			% i like moderntab more than the other one :)
 			\clef moderntab
