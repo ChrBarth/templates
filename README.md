@@ -1,2 +1,4 @@
 # templates
-templates for lilypond and other things
+
+_Templates for lilypond and other things_
+
