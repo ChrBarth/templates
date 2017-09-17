@@ -28,6 +28,8 @@ custom-tuning = \stringTuning <d a d' g' b' e''>
 
 snippet = \relative c' {
 	\key a \minor
+    \time 4/4
+    \tempo 4 = 120
 	%\set TabStaff.minimumFret = #5
 	\set TabStaff.restrainOpenStrings = ##t
 	\override StringNumber #'transparent = ##t
@@ -49,7 +51,8 @@ snippet = \relative c' {
 			\snippet
 			}
 		>>
-
-
 	>>
+    % Create sheet and midi-output:
+    \layout{}
+    \midi{ \snippet }
 }
