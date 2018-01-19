@@ -1,4 +1,5 @@
 \version "2.18.2"
+%%% SETTINGS {{{
 #(set-global-staff-size 14)
 #(set-default-paper-size "a4")
 
@@ -22,9 +23,9 @@
 
 custom-tuning = \stringTuning <d a d' g' b' e''>
 
-%%%%%%%%%
-% music %
-%%%%%%%%%
+%%% }}}
+
+%%% MUSIC {{{
 
 snippet = \relative c' {
 	\key a \minor
@@ -35,6 +36,10 @@ snippet = \relative c' {
 	\override StringNumber #'transparent = ##t
         a,8_"Text" b c d e f g\4 c\3 e\2 a\1 ~ a2.\1
 	}
+
+%%% }}}
+
+%%% SCORE {{{
 
 \score {
 	\new StaffGroup <<
@@ -56,3 +61,5 @@ snippet = \relative c' {
     \layout{}
     \midi{ \snippet }
 }
+
+%%% }}}
