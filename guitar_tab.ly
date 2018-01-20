@@ -53,7 +53,9 @@ snippet = \relative c' {
 			\set TabStaff.stringTunings = #guitar-tuning
 			% i like moderntab more than the other one :)
 			\clef moderntab
-			\snippet
+			\tabChordRepeats \snippet
+            % \tabChordRepeats: Akkorde werden in Tabulaturen gleich wiederholt:
+            % http://lilypond.org/doc/v2.19/Documentation/notation/common-notation-for-fretted-strings#default-tablatures
 			}
 		>>
 	>>
